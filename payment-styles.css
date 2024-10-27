@@ -1,0 +1,124 @@
+/* Estilos específicos para la página de pagos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc;
+    color: #1a1f36;
+    line-height: 1.6;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.payment-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1f36;
+}
+
+.subtitle {
+    color: #697386;
+    margin-bottom: 32px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.payment-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #e6e8eb;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.payment-btn:hover {
+    border-color: #6772e5;
+    background-color: #f8faff;
+    transform: translateY(-1px);
+}
+
+.payment-btn img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    object-fit: contain;
+}
+
+.payment-info {
+    text-align: left;
+}
+
+.payment-title {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1a1f36;
+}
+
+.payment-description {
+    display: block;
+    font-size: 14px;
+    color: #697386;
+}
+
+.secure-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e6e8eb;
+}
+
+.secure-badge img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.secure-badge span {
+    color: #697386;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .payment-card {
+        padding: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .payment-btn {
+        padding: 16px;
+    }
+}

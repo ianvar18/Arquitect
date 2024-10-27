@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Pago</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-card">
+            <h2>Seleccione su método de pago</h2>
+            <p class="subtitle">Elija el método que prefiera para realizar su pago</p>
+            
+            <div class="payment-options">
+                <button class="payment-btn" onclick="seleccionarPago('transferencia')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2372/2372138.png" alt="banco">
+                    <div class="payment-info">
+                        <span class="payment-title">Transferencia Bancaria</span>
+                        <span class="payment-description">Transferencia directa a nuestra cuenta</span>
+                    </div>
+                </button>
+                
+                <button class="payment-btn" onclick="seleccionarPago('webpay')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" alt="webpay">
+                    <div class="payment-info">
+                        <span class="payment-title">WebPay</span>
+                        <span class="payment-description">Pago con tarjeta de crédito o débito</span>
+                    </div>
+                </button>
+            </div>
+            
+            <div class="secure-badge">
+                <img src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png" alt="seguro">
+                <span>Pago 100% seguro</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

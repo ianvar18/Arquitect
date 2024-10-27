@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga María González - Reserva tu hora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="card">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="img/psicologa1.jpg" alt="Psicóloga María González">
+                </div>
+                <h1>Dra. María González</h1>
+                <p class="description">Especialista en terapia individual y de parejas con más de 10 años de experiencia en el tratamiento de ansiedad y depresión.</p>
+                <p class="specialty">Psicóloga Clínica</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <img src="banner-reserva.jpg" alt="Reserva tu consulta">
+            <div class="overlay">
+                <div class="consent-container">
+                    <label class="consent-checkbox">
+                        <input type="checkbox" id="consentimiento">
+                        <span class="checkmark"></span>
+                        Acepto los términos y condiciones de la consulta psicológica
+                    </label>
+                    <button class="btn-reserva btn-style" id="btnReserva" disabled>
+                        <span class="btn-text">Agendar Hora</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pop-up de reserva -->
+    <div id="reservaPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Reserva tu Hora</h3>
+            <form id="reservaForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha preferida:</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora preferida:</label>
+                    <select id="hora" required>
+                        <option value="">Seleccione una hora</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button id="confirmarReserva" class="btn-confirmar">Confirmar Reserva</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Dra. María González</h3>
+                <p>Psicóloga Clínica especializada en terapia individual y de parejas. Más de 10 años de experiencia.</p>
+                <p class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Av. Principal 123, Ciudad
+                </p>
+            </div>
+
+            <div class="footer-section hours">
+                <h3>Horario de Atención</h3>
+                <ul>
+                    <li>Lunes a Viernes: 9:00 - 18:00</li>
+                    <li>Sábado: 10:00 - 14:00</li>
+                    <li>Domingo: 10:00 - 12:00</li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/1" class="contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a href="mailto:contacto@psicologa.com" class="contact-btn email">
+                        <i class="far fa-envelope"></i>
+                        Email
+                    </a>
+                    <a href="https://instagram.com/" class="contact-btn instagram">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="tel:+123456789" class="contact-btn phone">
+                        <i class="fas fa-phone"></i>
+                        Llamar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dra. María González - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <!-- Agregar antes del cierre del body -->
+    <script src="script.js"></script>
+</body>
+</html>
